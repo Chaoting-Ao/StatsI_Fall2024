@@ -124,7 +124,7 @@ pdf("plot_boxplot.pdf")
 boxplot(Y ~ Region, data = expenditure,
         main = "Per Capita Expenditure on Housing Assistance by Region",
         xlab = "Region",
-        ylab = "Per Capita Expenditure ($)")
+        ylab = "Y: Per Capita Expenditure on Housing Assistance")
 dev.off()
 
 #here are my conclusions
