@@ -1,0 +1,243 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{graphicx,textcomp}
+\usepackage{natbib}
+\usepackage{setspace}
+\usepackage{fullpage}
+\usepackage{color}
+\usepackage[reqno]{amsmath}
+\usepackage{amsthm}
+\usepackage{fancyvrb}
+\usepackage{amssymb,enumerate}
+\usepackage[all]{xy}
+\usepackage{endnotes}
+\usepackage{lscape}
+\newtheorem{com}{Comment}
+\usepackage{float}
+\usepackage{hyperref}
+\newtheorem{lem} {Lemma}
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{cor}{Corollary}
+\newtheorem{obs}{Observation}
+\usepackage[compact]{titlesec}
+\usepackage{dcolumn}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usepackage{multirow}
+\usepackage{xcolor}
+\newcolumntype{.}{D{.}{.}{-1}}
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+\definecolor{light-gray}{gray}{0.65}
+\usepackage{url}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+\lstset{style=mystyle}
+\newcommand{\Sref}[1]{Section~\ref{#1}}
+\newtheorem{hyp}{Hypothesis}
+
+\title{Problem Set 2}
+\date{Due: October 14, 2024}
+\author{Applied Stats/Quant Methods 1}
+
+\begin{document}
+	\maketitle
+	\section*{Instructions}
+\begin{itemize}
+	\item Please show your work! You may lose points by simply writing in the answer. If the problem requires you to execute commands in \texttt{R}, please include the code you used to get your answers. Please also include the \texttt{.R} file that contains your code. If you are not sure if work needs to be shown for a particular problem, please ask.
+	\item Your homework should be submitted electronically on GitHub.
+	\item This problem set is due before 23:59 on Monday October 14, 2024. No late assignments will be accepted.
+
+\end{itemize}
+
+	
+	\vspace{.5cm}
+	\section*{Question 1: Political Science}
+		\vspace{.25cm}
+	The following table was created using the data from a study run in a major Latin American city.\footnote{Fried, Lagunes, and Venkataramani (2010). ``Corruption and Inequality at the Crossroad: A Multimethod Study of Bribery and Discrimination in Latin America. \textit{Latin American Research Review}. 45 (1): 76-97.} As part of the experimental treatment in the study, one employee of the research team was chosen to make illegal left turns across traffic to draw the attention of the police officers on shift. Two employee drivers were upper class, two were lower class drivers, and the identity of the driver was randomly assigned per encounter. The researchers were interested in whether officers were more or less likely to solicit a bribe from drivers depending on their class (officers use phrases like, ``We can solve this the easy way'' to draw a bribe). The table below shows the resulting data.
+
+\newpage
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{l | c c c }
+		& Not Stopped & Bribe requested & Stopped/given warning \\
+		\\[-1.8ex] 
+		\hline \\[-1.8ex]
+		Upper class & 14 & 6 & 7 \\
+		Lower class & 7 & 7 & 1 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{enumerate}
+	
+	\item [(a)]
+	Calculate the $\chi^2$ test statistic by hand/manually (even better if you can do "by hand" in \texttt{R}).\\
+	
+	\begin{tabular}{|l|c|c|c|c|}
+		\hline
+		& Not Stopped & Bribe requested & Stopped/given warning & Total \\
+		\hline
+		Upper class & $f_o=14$ & $f_o=6$ & $f_o=7$ & 27 \\
+		& $f_e = 13.50$ & $f_e = 8.36$ & $f_e = 5.14$ & \\
+		\hline
+		Lower class & $f_o=7$ & $f_o=7$ & $f_o=1$ & 15 \\
+		& $f_e = 7.50$ & $f_e = 3.69$ & $f_e = 3.81$ & \\
+		\hline
+		Total & 21 & 13 & 8 & 42 \\
+		\hline
+	\end{tabular}
+	
+$\chi^2 = \sum(f_0 - f_e)^2 / f_e$\\
+First, calculate the expected frequencies ($f_e$) for each cell:\\
+Upper class:\\
+Not stopped: $f_e$ = (27 * 21) / 42 = 13.5\\
+Bribe: $f_e$ = (13 * 27) / 42 = 8.36\\
+Warning: $f_e$ = (8 * 27) / 42 = 5.14\\
+Lower class:\\
+Not stopped: $f_e$ = (21 * 15) / 42 = 7.5\\
+Bribe: $f_e$ = (13 * 15) / 42 = 4.64\\
+Warning: $f_e$ = (8 * 15) / 42 = 2.86\\
+Now calculate $(f_0 - f_e)^2 / f_e$ for each cell:\\
+Upper class:\\
+Not stopped:  $(14 - 13.5)^2 / 13.5 = 0.0185$\\
+Bribe: $(6 - 8.36)^2 / 8.36 = 0.6662$\\
+Warning: $(7 - 5.14)^2 / 5.14 = 0.6731$\\
+Lower class:\\
+Not stopped: $(7 - 7.5)^2 / 7.5 = 0.0333$\\
+Bribe: $(7 - 3.69)^2 / 3.69 = 2.969$\\
+Warning: $(1 - 3.81)^2 / 3.81 = 2.0725$\\
+$\chi^2 = 0.0185 + 0.6662 + 0.6731 + 0.0333 + 2.969 + 2.0725 = 6.4326$\\
+Therefore, the manually calculated $\chi^2$ test statistic is 6.4326.
+	
+	\newpage
+	\item [(b)]
+	Now calculate the p-value from the test statistic you just created (in \texttt{R}).\footnote{Remember frequency should be $>$ 5 for all cells, but let's calculate the p-value here anyway.}  What do you conclude if $\alpha = 0.1$?\\
+	
+	\lstinputlisting[language=R, firstline=42, lastline=45]{PS02_CT.A.R} 
+	At $\alpha = 0.1$ significance level, since p-value $< \alpha$, we reject the null hypothesis. This suggests there is a significant association between the driver's class and the officer's behavior.\\
+	
+	\item [(c)] Calculate the standardized residuals for each cell and put them in the table below.
+	\vspace{1cm}
+	
+		\begin{tabular}{|l|c|c|c|c|}
+		\hline
+		& Not Stopped & Bribe requested & Stopped/given warning & Total \\
+		\hline
+		Upper class & $f_o=14$ & $f_o=6$ & $f_o=7$ & 27 \\
+		& $f_e = 13.50$ & $f_e = 8.36$ & $f_e = 5.14$ & \\
+		\hline
+		Lower class & $f_o=7$ & $f_o=7$ & $f_o=1$ & 15 \\
+		& $f_e = 7.50$ & $f_e = 3.69$ & $f_e = 3.81$ & \\
+		\hline
+		Total & 21 & 13 & 8 & 42 \\
+		\hline
+	\end{tabular}\\
+	\vspace{1cm}
+	
+	 $Z_{11} = (14 - 13.5) / \sqrt{13.5 \cdot \left( 1 - \frac{27}{42} \right) \cdot \left( 1 - \frac{21}{42} \right)} = 0.322$\\
+	 $Z_{12} = (6 - 8.36) / \sqrt{8.36 \cdot \left( 1 - \frac{27}{42} \right) \cdot \left( 1 - \frac{13}{42} \right)} = -1.9315$\\
+	 .\\
+	 .\\
+	 .\\
+	
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{l | c c c }
+			& Not Stopped & Bribe requested & Stopped/given warning \\
+			\\[-1.8ex] 
+			\hline \\[-1.8ex]
+			Upper class & 0.322 & -1.9315 & 1.9414 \\
+			\\
+			Lower class & -0.322 & 3.0393 & -2.5392  \\
+			
+		\end{tabular}
+	\end{table}
+	
+	
+	\newpage
+	\item [(d)] How might the standardized residuals help you interpret the results?  \\
+	\vspace{1cm}
+	
+	From our calculations, we observe:\\
+	
+	Lower class drivers are requested bribes significantly more often than expected (3.0393). This is the largest positive residual, indicating this occurs far more frequently than random chance would predict.\\
+	Lower class drivers are stopped and given warnings significantly less often than expected (-2.5392). This is the largest negative residual, suggesting this occurs far less frequently than random chance would predict.\\
+	Upper class drivers are stopped and given warnings more often than expected (1.9414).\\
+	Upper class drivers are requested bribes less often than expected (-1.9315).\\
+	Both upper and lower class drivers are not stopped at rates close to expected (0.322 and -0.322 respectively), with relatively small deviations.\\
+	
+	These results strongly suggest that police officers behave differently towards drivers of different classes. Lower class drivers are more likely to be requested bribes and less likely to be simply warned. In contrast, upper class drivers are more likely to be stopped and given warnings, and less likely to be requested bribes. This pattern may reflect discriminatory enforcement practices by the police based on class.
+	
+\end{enumerate}
+\newpage
+
+\section*{Question 2: Economics}
+Chattopadhyay and Duflo were interested in whether women promote different policies than men.\footnote{Chattopadhyay and Duflo. (2004). ``Women as Policy Makers: Evidence from a Randomized Policy Experiment in India. \textit{Econometrica}. 72 (5), 1409-1443.} Answering this question with observational data is pretty difficult due to potential confounding problems (e.g. the districts that choose female politicians are likely to systematically differ in other aspects too). Hence, they exploit a randomized policy experiment in India, where since the mid-1990s, $\frac{1}{3}$ of village council heads have been randomly reserved for women. A subset of the data from West Bengal can be found at the following link: \url{https://raw.githubusercontent.com/kosukeimai/qss/master/PREDICTION/women.csv}\\
+
+\noindent Each observation in the data set represents a village and there are two villages associated with one GP (i.e. a level of government is called "GP"). Figure~\ref{fig:women_desc} below shows the names and descriptions of the variables in the dataset. The authors hypothesize that female politicians are more likely to support policies female voters want. Researchers found that more women complain about the quality of drinking water than men. You need to estimate the effect of the reservation policy on the number of new or repaired drinking water facilities in the villages.
+\vspace{.5cm}
+\begin{figure}[h!]
+	\caption{\footnotesize{Names and description of variables from Chattopadhyay and Duflo (2004).}}
+	\vspace{.5cm}
+	\centering
+	\label{fig:women_desc}
+	\includegraphics[width=1.1\textwidth]{women_desc.png}
+\end{figure}		
+
+\newpage
+\begin{enumerate}
+	\item [(a)] State a null and alternative (two-tailed) hypothesis. 
+	
+	Null Hypothesis\\
+	($H_0$): There is no relationship between whether the GP (Gram Panchayat) has a female leader (female) and the number of new or repaired drinking-water facilities in the village since the reserve policy started (water).\\
+	$\beta_1$ = 0 (where $\beta_1$ iis the coefficient for the female variable)\\
+	Alternative Hypothesis\\
+	($H_a$):  There is a relationship between whether the GP has a female leader and the number of new or repaired drinking-water facilities in the village since the reserve policy started.\\
+	$\beta_1 \neq 0$
+
+	\item [(b)] Run a bivariate regression to test this hypothesis in \texttt{R} (include your code!).
+	
+	\lstinputlisting[language=R, firstline=54, lastline=61]{PS02_CT.A.R}
+	\newpage
+	\item [(c)] Interpret the coefficient estimate for reservation policy. \\
+	
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"lm output"}
+	\caption{}
+	\label{fig:lm-output}
+\end{figure}
+
+\vspace{1cm}
+The coefficient estimate for the female variable is 7.864. Since female is a binary variable indicating whether the GP has a female leader or not, this coefficient can be interpreted as follows:\\
+When a GP has a female leader (female=1), compared to GPs without a female leader (female=0), the number of new or repaired drinking-water facilities in the village since the reserve policy started increases by an average of 7.864.\\
+This estimate is statistically significant (p-value = 0.0413 $<$ 0.05), indicating that we have sufficient evidence to reject the null hypothesis. There is a significant positive relationship between whether a GP has a female leader and the number of new or repaired drinking-water facilities in the village.
+
+\end{enumerate}
+
+\end{document}
