@@ -40,9 +40,9 @@ install.packages("stargazer")
 # here is answer (b)
 
 #df = (3-1) * (2-1) = 2
-p_value = pchisq(6.4326, df=2, lower.tail=FALSE)
+p_value = pchisq(3.7941, df=2, lower.tail=FALSE)
 print(p_value)
-#This gives a p-value of approximately 0.0401
+#This gives a p-value of approximately 0.15
 
 #####################
 # Question 2

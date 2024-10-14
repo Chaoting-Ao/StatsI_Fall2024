@@ -106,7 +106,7 @@
 		& $f_e = 13.50$ & $f_e = 8.36$ & $f_e = 5.14$ & \\
 		\hline
 		Lower class & $f_o=7$ & $f_o=7$ & $f_o=1$ & 15 \\
-		& $f_e = 7.50$ & $f_e = 3.69$ & $f_e = 3.81$ & \\
+		& $f_e = 7.50$ & $f_e = 4.64$ & $f_e = 2.86$ & \\
 		\hline
 		Total & 21 & 13 & 8 & 42 \\
 		\hline
@@ -129,17 +129,17 @@ Bribe: $(6 - 8.36)^2 / 8.36 = 0.6662$\\
 Warning: $(7 - 5.14)^2 / 5.14 = 0.6731$\\
 Lower class:\\
 Not stopped: $(7 - 7.5)^2 / 7.5 = 0.0333$\\
-Bribe: $(7 - 3.69)^2 / 3.69 = 2.969$\\
-Warning: $(1 - 3.81)^2 / 3.81 = 2.0725$\\
-$\chi^2 = 0.0185 + 0.6662 + 0.6731 + 0.0333 + 2.969 + 2.0725 = 6.4326$\\
-Therefore, the manually calculated $\chi^2$ test statistic is 6.4326.
+Bribe: $(7 - 4.64)^2 / 4.64 = 1.1960$\\
+Warning: $(1 - 2.86)^2 / 2.86 = 1.2070$\\
+$\chi^2 = 0.0185 + 0.6662 + 0.6731 + 0.0333 + 1.1960 + 1.2070 = 3.7941$\\
+Therefore, the manually calculated $\chi^2$ test statistic is 3.7941.
 	
 	\newpage
 	\item [(b)]
 	Now calculate the p-value from the test statistic you just created (in \texttt{R}).\footnote{Remember frequency should be $>$ 5 for all cells, but let's calculate the p-value here anyway.}  What do you conclude if $\alpha = 0.1$?\\
 	
 	\lstinputlisting[language=R, firstline=42, lastline=45]{PS02_CT.A.R} 
-	At $\alpha = 0.1$ significance level, since p-value $< \alpha$, we reject the null hypothesis. This suggests there is a significant association between the driver's class and the officer's behavior.\\
+	At $\alpha = 0.1$ significance level, since p-value $> \alpha$, we fail to reject the null hypothesis. Indicating that there is not enough evidence to conclude that there is a significant association between driver class and police officer behavior.\\
 	
 	\item [(c)] Calculate the standardized residuals for each cell and put them in the table below.
 	\vspace{1cm}
@@ -152,14 +152,14 @@ Therefore, the manually calculated $\chi^2$ test statistic is 6.4326.
 		& $f_e = 13.50$ & $f_e = 8.36$ & $f_e = 5.14$ & \\
 		\hline
 		Lower class & $f_o=7$ & $f_o=7$ & $f_o=1$ & 15 \\
-		& $f_e = 7.50$ & $f_e = 3.69$ & $f_e = 3.81$ & \\
+		& $f_e = 7.50$ & $f_e = 4.64$ & $f_e = 2.86$ & \\
 		\hline
 		Total & 21 & 13 & 8 & 42 \\
 		\hline
 	\end{tabular}\\
 	\vspace{1cm}
 	
-	 $Z_{11} = (14 - 13.5) / \sqrt{13.5 \cdot \left( 1 - \frac{27}{42} \right) \cdot \left( 1 - \frac{21}{42} \right)} = 0.322$\\
+	 $Z_{11} = (14 - 13.5) / \sqrt{13.5 \cdot \left( 1 - \frac{27}{42} \right) \cdot \left( 1 - \frac{21}{42} \right)} = 0.3227$\\
 	 $Z_{12} = (6 - 8.36) / \sqrt{8.36 \cdot \left( 1 - \frac{27}{42} \right) \cdot \left( 1 - \frac{13}{42} \right)} = -1.9315$\\
 	 .\\
 	 .\\
@@ -171,9 +171,9 @@ Therefore, the manually calculated $\chi^2$ test statistic is 6.4326.
 			& Not Stopped & Bribe requested & Stopped/given warning \\
 			\\[-1.8ex] 
 			\hline \\[-1.8ex]
-			Upper class & 0.322 & -1.9315 & 1.9414 \\
+			Upper class & 0.322 & -1.6437 & 1.5258 \\
 			\\
-			Lower class & -0.322 & 3.0393 & -2.5392  \\
+			Lower class & -0.322 & 1.6445 & -1.5246  \\
 			
 		\end{tabular}
 	\end{table}
@@ -185,13 +185,13 @@ Therefore, the manually calculated $\chi^2$ test statistic is 6.4326.
 	
 	From our calculations, we observe:\\
 	
-	Lower class drivers are requested bribes significantly more often than expected (3.0393). This is the largest positive residual, indicating this occurs far more frequently than random chance would predict.\\
-	Lower class drivers are stopped and given warnings significantly less often than expected (-2.5392). This is the largest negative residual, suggesting this occurs far less frequently than random chance would predict.\\
-	Upper class drivers are stopped and given warnings more often than expected (1.9414).\\
-	Upper class drivers are requested bribes less often than expected (-1.9315).\\
-	Both upper and lower class drivers are not stopped at rates close to expected (0.322 and -0.322 respectively), with relatively small deviations.\\
+	Upper class drivers were less likely to be asked for bribes than expected (-1.6437)\\
+	Upper class drivers were more likely to be stopped/given warnings than expected (1.5258)\\
+	Lower class drivers were more likely to be asked for bribes than expected (1.6445)\\
+	Lower class drivers were less likely to be stopped/given warnings than expected (-1.5246)\\
 	
-	These results strongly suggest that police officers behave differently towards drivers of different classes. Lower class drivers are more likely to be requested bribes and less likely to be simply warned. In contrast, upper class drivers are more likely to be stopped and given warnings, and less likely to be requested bribes. This pattern may reflect discriminatory enforcement practices by the police based on class.
+	These patterns suggest that police may treat drivers from different social classes differently. Upper class drivers appear more likely to receive warnings, while lower class drivers are more likely to be asked for bribes.\\
+	However, it's important to note that none of these residuals exceed an absolute value of 2, indicating that while patterns exist, these differences may not be statistically very significant.
 	
 \end{enumerate}
 \newpage
