@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.10)  10 NOV 2024 22:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.10)  11 NOV 2024 00:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**PS01_CT.A.tex
-(./PS01_CT.A.tex
+**PS3_CT.A.tex
+(./PS3_CT.A.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -826,27 +826,27 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count340
 \l__pdf_internal_box=\box76
 )
-(./PS01_CT.A.aux)
-\openout1 = `PS01_CT.A.aux'.
+(./PS3_CT.A.aux)
+\openout1 = `PS3_CT.A.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -870,24 +870,23 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 67.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 68.
 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 67.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package xypdf Info: Line width: 0.47998pt on input line 67.
-Package hyperref Info: Link coloring OFF on input line 67.
-
-(./PS01_CT.A.out) (./PS01_CT.A.out)
+Package xypdf Info: Line width: 0.47998pt on input line 68.
+Package hyperref Info: Link coloring OFF on input line 68.
+ (./PS3_CT.A.out) (./PS3_CT.A.out)
 \@outlinefile=\write7
-\openout7 = `PS01_CT.A.out'.
+\openout7 = `PS3_CT.A.out'.
 
 \c@lstlisting=\count347
 
@@ -901,186 +900,113 @@ File: lstlang2.sty 2024/02/21 1.10 listings language file
 File: lstlang3.sty 2024/02/21 1.10 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 84.
+nput line 90.
 
-(./PS01_CT.A.R
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 3
-9.
+(./PS3_CT.A.R
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 4
+6.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 39.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 46.
 
- []
-
-(./PS01_CT.A.R [1
+[1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
-al/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 5
-2.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+al/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}])
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-(./PS01_CT.A.R) [2] (./PS01_CT.A.R)
-Overfull \hbox (5.72021pt too wide) in paragraph at lines 131--131
-[]\OT1/cmtt/m/n/12 STATE    Y                X1             X2              X3 
-           Region[] 
+(./PS3_CT.A.R)
+<scatter_plot1.pdf, id=33, 505.89pt x 505.89pt>
+File: scatter_plot1.pdf Graphic file (type pdf)
+<use scatter_plot1.pdf>
+Package pdftex.def Info: scatter_plot1.pdf  used on input line 105.
+(pdftex.def)             Requested size: 308.26488pt x 308.26823pt.
+ [2] (./PS3_CT.A.R) [3 <./scatter_plot1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+
  []
 
+[4] (./PS3_CT.A.R)
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
-Overfull \hbox (24.24522pt too wide) in paragraph at lines 131--131
-[]    \OT1/cmtt/m/n/12 Min.   : 42.00   Min.   :1053   Min.   :111.0   Min.   :
-326.0   Min.   :1.00[] 
  []
 
+(./PS3_CT.A.R [5])
+<scatter_plot2.pdf, id=131, 505.89pt x 505.89pt>
+File: scatter_plot2.pdf Graphic file (type pdf)
+<use scatter_plot2.pdf>
+Package pdftex.def Info: scatter_plot2.pdf  used on input line 154.
+(pdftex.def)             Requested size: 308.26488pt x 308.26823pt.
+ (./PS3_CT.A.R) [6 <./scatter_plot2.pdf>] [7] (./PS3_CT.A.R)
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
-Overfull \hbox (24.24522pt too wide) in paragraph at lines 131--131
-[]    \OT1/cmtt/m/n/12 1st Qu.: 67.25   1st Qu.:1698   1st Qu.:187.2   1st Qu.:
-426.2   1st Qu.:2.00[] 
  []
 
+(./PS3_CT.A.R [8])
+<scatter_plot3.pdf, id=203, 505.89pt x 505.89pt>
+File: scatter_plot3.pdf Graphic file (type pdf)
+<use scatter_plot3.pdf>
+Package pdftex.def Info: scatter_plot3.pdf  used on input line 204.
+(pdftex.def)             Requested size: 308.26488pt x 308.26823pt.
+ [9 <./scatter_plot3.pdf>] (./PS3_CT.A.R)
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
-Overfull \hbox (24.24522pt too wide) in paragraph at lines 131--131
-[]    \OT1/cmtt/m/n/12 Median : 79.00   Median :1897   Median :241.5   Median :
-568.0   Median :3.00[] 
  []
 
+[10] (./PS3_CT.A.R)
+<scatter_plot4.pdf, id=256, 505.89pt x 505.89pt>
+File: scatter_plot4.pdf Graphic file (type pdf)
+<use scatter_plot4.pdf>
+Package pdftex.def Info: scatter_plot4.pdf  used on input line 247.
+(pdftex.def)             Requested size: 308.26488pt x 308.26823pt.
+ [11 <./scatter_plot4.pdf>] (./PS3_CT.A.R)
+Underfull \hbox (badness 10000) in paragraph at lines 283--284
 
-Overfull \hbox (24.24522pt too wide) in paragraph at lines 131--131
-[]    \OT1/cmtt/m/n/12 Mean   : 79.54   Mean   :1912   Mean   :281.8   Mean   :
-561.7   Mean   :2.66[] 
  []
 
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 311--313
 
-Overfull \hbox (24.24522pt too wide) in paragraph at lines 131--131
-[]    \OT1/cmtt/m/n/12 3rd Qu.: 90.00   3rd Qu.:2096   3rd Qu.:391.8   3rd Qu.:
-661.2   3rd Qu.:3.75[] 
  []
 
-
-Overfull \hbox (24.24522pt too wide) in paragraph at lines 131--131
-[]    \OT1/cmtt/m/n/12 Max.   :129.00   Max.   :2817   Max.   :531.0   Max.   :
-899.0   Max.   :4.00[] 
- []
-
-<plot_pairs.pdf, id=76, 505.89pt x 505.89pt>
-File: plot_pairs.pdf Graphic file (type pdf)
-<use plot_pairs.pdf>
-Package pdftex.def Info: plot_pairs.pdf  used on input line 142.
-(pdftex.def)             Requested size: 399.29463pt x 399.30135pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(./PS01_CT.A.R [3] [4 <./plot_pairs.pdf>])
-<plot_boxplot.pdf, id=118, 505.89pt x 505.89pt>
-File: plot_boxplot.pdf Graphic file (type pdf)
-<use plot_boxplot.pdf>
-Package pdftex.def Info: plot_boxplot.pdf  used on input line 154.
-(pdftex.def)             Requested size: 399.29463pt x 399.30135pt.
- (./PS01_CT.A.R [5 <./plot_boxplot.pdf>]) (./PS01_CT.A.R [6]
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.196 #The R² 
-               value is 0.283, indicating that about 28.3% of the variation in
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte "B2.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.196 #The R² 
-               value is 0.283, indicating that about 28.3% of the variation in
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-)
-<plot_X1&Y.pdf, id=186, 505.89pt x 505.89pt>
-File: plot_X1&Y.pdf Graphic file (type pdf)
-<use plot_X1&Y.pdf>
-Package pdftex.def Info: plot_X1&Y.pdf  used on input line 166.
-(pdftex.def)             Requested size: 399.29463pt x 399.30135pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<regression_output1.pdf, id=187, 614.295pt x 794.97pt>
-File: regression_output1.pdf Graphic file (type pdf)
-<use regression_output1.pdf>
-Package pdftex.def Info: regression_output1.pdf  used on input line 170.
-(pdftex.def)             Requested size: 399.29463pt x 516.73651pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<plot_X1&Y&region.pdf, id=188, 505.89pt x 505.89pt>
-File: plot_X1&Y&region.pdf Graphic file (type pdf)
-<use plot_X1&Y&region.pdf>
-Package pdftex.def Info: plot_X1&Y&region.pdf  used on input line 176.
-(pdftex.def)             Requested size: 399.29463pt x 399.30135pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[7] [8 <./plot_X1&Y.pdf>] [9 <./regression_output1.pdf>] [10 <./plot_X1&Y&regio
-n.pdf>] (./PS01_CT.A.aux)
+[13] (./PS3_CT.A.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-Package rerunfilecheck Info: File `PS01_CT.A.out' has not changed.
+Package rerunfilecheck Info: File `PS3_CT.A.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27418 strings out of 474116
- 477354 string characters out of 5743682
- 2256187 words of memory out of 5000000
- 49110 multiletter control sequences out of 15000+600000
- 568855 words of font info for 81 fonts, out of 8000000 for 9000
+ 27437 strings out of 474116
+ 477252 string characters out of 5743682
+ 2064187 words of memory out of 5000000
+ 49073 multiletter control sequences out of 15000+600000
+ 568508 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,6n,93p,3241b,2132s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,6n,93p,3240b,2833s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
-/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/l
-ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loca
-l/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
-exlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
-ive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
-ve/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
+/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loc
+al/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/
+texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
+live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
 e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive
 /2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2
 024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on PS01_CT.A.pdf (10 pages, 256502 bytes).
+Output written on PS3_CT.A.pdf (13 pages, 932081 bytes).
 PDF statistics:
- 374 PDF objects out of 1000 (max. 8388607)
- 317 compressed objects within 4 object streams
- 173 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 427 PDF objects out of 1000 (max. 8388607)
+ 372 compressed objects within 4 object streams
+ 225 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
